@@ -1,0 +1,46 @@
+✅ Using Arrays.asList().indexOf() (for arrays)
+java
+Copy
+Edit
+import java.util.Arrays;
+
+public class LinearSearchExample {
+    public static void main(String[] args) {
+        String[] items = {"apple", "banana", "mango", "grape"};
+        String target = "mango";
+
+        int index = Arrays.asList(items).indexOf(target);
+
+        if (index != -1) {
+            System.out.println(target + " found at index " + index);
+        } else {
+            System.out.println(target + " not found.");
+        }
+    }
+}
+✅ Using ArrayList.indexOf() (for lists)
+java
+Copy
+Edit
+import java.util.ArrayList;
+import java.util.List;
+
+public class LinearSearchWithList {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(10);
+        numbers.add(25);
+        numbers.add(30);
+        numbers.add(45);
+
+        int target = 30;
+
+        int index = numbers.indexOf(target);
+
+        if (index != -1) {
+            System.out.println(target + " found at index " + index);
+        } else {
+            System.out.println(target + " not found.");
+        }
+    }
+}

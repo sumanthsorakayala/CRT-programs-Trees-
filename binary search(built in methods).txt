@@ -1,0 +1,51 @@
+✅ Using Arrays.binarySearch() (for sorted arrays)
+java
+Copy
+Edit
+import java.util.Arrays;
+
+public class BinarySearchArray {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40, 50};
+        int target = 30;
+
+        // Make sure the array is sorted before using binarySearch
+        int index = Arrays.binarySearch(numbers, target);
+
+        if (index >= 0) {
+            System.out.println(target + " found at index " + index);
+        } else {
+            System.out.println(target + " not found.");
+        }
+    }
+}
+✅ Using Collections.binarySearch() (for sorted lists)
+java
+Copy
+Edit
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class BinarySearchList {
+    public static void main(String[] args) {
+        List<String> names = new ArrayList<>();
+        names.add("Akhil");
+        names.add("Bhanu");
+        names.add("Charan");
+        names.add("Deepak");
+
+        // Sort the list before performing binary search
+        Collections.sort(names);
+
+        String target = "Charan";
+
+        int index = Collections.binarySearch(names, target);
+
+        if (index >= 0) {
+            System.out.println(target + " found at index " + index);
+        } else {
+            System.out.println(target + " not found.");
+        }
+    }
+}
