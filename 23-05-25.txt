@@ -1,0 +1,10 @@
+23-05-2025
+OOP
+---
+1.Class
+2.Object
+3.Access Specifiers - it is accessible with some restrictions or scope !
+4.Inheritance
+5.Encapsulation
+
+__name__ = Magical methods
